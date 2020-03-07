@@ -19,3 +19,15 @@ void str_cpy(char* dst, const char* src) {
 
   return;
 }
+
+void str_concat(char* str1, const char* str2) {
+  int str1_len = str_len(str1);
+  int str2_len = str_len(str2);
+  int i = 0;
+
+  for(; str2[i] != '\0'; ++i) {
+    str1[i + str1_len] = str2[i];
+  }
+
+  str1[i + str1_len + 1] = '\0';
+}
