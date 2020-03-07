@@ -16,4 +16,8 @@ void run_tests() {
 
   str_concat(test, test1);
   printf("test: %s\n", test);
+
+  char test2[20];
+  num_to_char(test2, 7);
+  printf("7: %s\n", test2);
 }
